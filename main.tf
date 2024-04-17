@@ -1,4 +1,6 @@
-terraform {}
+terraform {
+  backend "s3" {}
+}
 
 variable "test" {}
 
