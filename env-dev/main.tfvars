@@ -42,8 +42,8 @@ components = {
 }
 
 
-default = ["sg-0cd45286220a14e5a"]
+security_groups = ["sg-0cd45286220a14e5a"]
 
 
 
-default = "Z05847051QFB84Q2A5JP0"
+zone_id = "Z05847051QFB84Q2A5JP0"
