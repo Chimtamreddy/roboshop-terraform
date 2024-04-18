@@ -1,3 +1,3 @@
 output "vpc" {
-  value = data.aws_subnets
+  value = data.aws_subnets.subnets
 }
