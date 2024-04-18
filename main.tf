@@ -36,9 +36,9 @@ module "docdb" {
 
   tags = var.tags
   env = var.env
-  subnet_ids = local.app_subnets_cidr
+  subnet_ids = local.db_subnets
   vpc_id = local.vpc_id
-  sg_ingress_cidr = each.value["sg_ingress_cidr"]
+  sg_ingress_cidr = local.app_subnets_cidr
   backup_retention_period = each.value["backup_retention_period"]
   preferred_backup_window = each.value["preferred_backup_window"]
   skip_final_snapshot     = each.value["skip_final_snapshot"]
