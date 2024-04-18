@@ -26,7 +26,6 @@ module "alb" {
   sg_port = each.value["sg_port"]
   sg_ingress_cidr = each.value["sg_ingress_cidr"]
 
-
 }
 
 
