@@ -101,6 +101,8 @@ module "rabbitmq" {
 
   tags = var.tags
   env = var.env
+  zone_id = var.zone_id
+
   subnet_ids = local.db_subnets
   vpc_id = local.vpc_id
   sg_ingress_cidr = local.app_subnets_cidr
