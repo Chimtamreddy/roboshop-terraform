@@ -135,7 +135,7 @@ module "app" {
   subnet_ids = local.app_subnets
   vpc_id = local.vpc_id
 
-
+#   alb_name = lookup(module.alb, "private", null)
 
 
 
