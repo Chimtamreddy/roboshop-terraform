@@ -65,4 +65,19 @@ docdb = {
   }
 }
 
+rds = {
+  main = {
+    rds_type = "mysql"
+    db_port = 3306
+    engine_family = "aurora-mysql5.7"
+    engine = "aurora-mysql"
+    engine_version = "5.7.mysql_aurora.2.11.3"
+    backup_retention_period = 5
+    preferred_backup_window = "07:00-09:00"
+    skip_final_snapshot     = true
+    instance_class = "db.t3.small"
+    instance_count = 1
+
+  }
+}
 
