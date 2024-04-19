@@ -93,3 +93,11 @@ elasticache = {
   }
 }
 
+rabbitmq = {
+  main = {
+    ssh_ingress_cidr = ["172.31.23.214/32"]
+    instance_type = "t3.small"
+
+  }
+}
+

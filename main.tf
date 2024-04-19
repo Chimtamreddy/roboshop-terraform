@@ -59,7 +59,7 @@ module "rds" {
   vpc_id = local.vpc_id
   sg_ingress_cidr = local.app_subnets_cidr
 
-  
+
   rds_type = each.value["rds_type"]
   db_port = each.value["db_port"]
   engine_family = each.value["engine_family"]
@@ -90,7 +90,24 @@ module "elasticache" {
   node_type = each.value["node_type"]
   num_cache_nodes = each.value["num_cache_nodes"]
   engine_version = each.value["engine_version"]
-  
+
+
+}
+
+module "rabbitmq" {
+
+  source = "git::https://github.com/Chimtamreddy/tf-module-rabbitmq.git"
+  for_each = var.rabbitmq
+
+  tags = var.tags
+  env = var.env
+  subnet_ids = local.db_subnets
+  vpc_id = local.vpc_id
+  sg_ingress_cidr = local.app_subnets_cidr
+  ssh_ingress_cidr = each.value["ssh_ingress_cidr"]
+  instance_type = each.value["instance_type"]
+
+
 
 }
 
