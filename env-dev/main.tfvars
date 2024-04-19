@@ -122,6 +122,7 @@ apps = {
     desired_capacity   = 1
     max_size           = 3
     min_size           = 1
+    lb_priority     = 1
   }
 
   catalogue = {
@@ -130,6 +131,8 @@ apps = {
     desired_capacity   = 1
     max_size           = 3
     min_size           = 1
+    lb_priority     = 2
+
   }
 
   user = {
@@ -138,6 +141,8 @@ apps = {
     desired_capacity   = 1
     max_size           = 3
     min_size           = 1
+    lb_priority     = 3
+
   }
 
   cart = {
@@ -146,6 +151,8 @@ apps = {
     desired_capacity   = 1
     max_size           = 3
     min_size           = 1
+    lb_priority     = 4
+
   }
 
   shipping = {
@@ -154,6 +161,8 @@ apps = {
     desired_capacity   = 1
     max_size           = 3
     min_size           = 1
+    lb_priority     = 5
+
   }
 
   payment = {
@@ -162,6 +171,8 @@ apps = {
     desired_capacity   = 1
     max_size           = 3
     min_size           = 1
+    lb_priority     = 6
+
   }
 }
 
