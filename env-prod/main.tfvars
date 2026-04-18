@@ -1,1 +1,1 @@
-prod="Hello from Prod"
+test="Hello from Prod"
