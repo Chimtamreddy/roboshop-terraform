@@ -5,7 +5,6 @@ zone_id = "Z08590761XW1O9G92270H"
 
 
 components = {
-  default = {
     frontend = {
       name = "frontend"
       instance_type = "t3.micro"
@@ -51,5 +50,5 @@ components = {
       name = "payment"
       instance_type = "t3.micro"
     }
-  }
+
 }
