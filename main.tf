@@ -18,6 +18,7 @@ module "vpc" {
 #   internal = each.value["internal"]
 #   internal = each.value["lb_type"]
 #   sg_ingress_cidr = each.value["sg_ingress_cidr"]
+#   vpc_id = each.value["internal"] ? : var.
 #   internal = each.value["internal"] ? : var.
 #   env = var.env
 #   tags = var.tags
