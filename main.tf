@@ -12,6 +12,17 @@ module "vpc" {
 
 }
 
-output "vpc" {
-  value = module.vpc
-}
+# module "alb" {
+#   source = "git::https://github.com/Chimtamreddy/tf-module-alb.git"
+#   for_each = var.alb
+#   internal = each.value["internal"]
+#   internal = each.value["lb_type"]
+#   sg_ingress_cidr = each.value["sg_ingress_cidr"]
+#   internal = each.value["internal"] ? : var.
+#   env = var.env
+#   tags = var.tags
+#
+# }
+
+
+
