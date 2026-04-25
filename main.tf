@@ -16,7 +16,7 @@ module "alb" {
   source = "git::https://github.com/Chimtamreddy/tf-module-alb.git"
   for_each = var.alb
   internal = each.value["internal"]
-  internal = each.value["lb_type"]
+  lb_type = each.value["lb_type"]
   sg_ingress_cidr = each.value["sg_ingress_cidr"]
   sg_port = each.value["sg_port"]
   vpc_id = each.value["internal"] ? local.vpc_id : var.default_vpc_id
